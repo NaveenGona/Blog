@@ -9,20 +9,28 @@ export class MainBodyComponent implements OnInit {
 
   carouselImages = [
     {
-      path:"./assets/img/portfolio-2.jpg",
-      title:"carouselImage"
+      path:"assets/img/portfolio-2.jpg",
+      title:"carouselImage",
+      prev:"Previous",
+      next:"Next"
     },
     {
-      path:"./assets/img/portfolio-3.jpg",
-      title:"carouselImage"
+      path:"assets/img/portfolio-3.jpg",
+      title:"carouselImage",
+      prev:"Previous",
+      next:"Next"
     },
     {
-      path:"./assets/img/portfolio-7.jpg",
-      title:"carouselImage"
+      path:"assets/img/portfolio-7.jpg",
+      title:"carouselImage",
+      prev:"Previous",
+      next:"Next"
     },
     {
-      path:"./assets/img/portfolio-8.jpg",
-      title:"carouselImage"
+      path:"assets/img/portfolio-8.jpg",
+      title:"carouselImage",
+      prev:"Previous",
+      next:"Next"
     },
   ];
 

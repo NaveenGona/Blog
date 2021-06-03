@@ -1,10 +1,8 @@
 <div  id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div  class="carousel-inner">
-      <div *ngFor="let carouselImage of carouselImages" class="carousel-item active" data-bs-interval="1000">
+    <div *ngFor="let carouselImage of carouselImages"  class="carousel-inner">
+      <div  class="carousel-item active" data-bs-interval="1000">
         <img src="{{carouselImage.path}}" class="d-block w-100" alt="{{carouselImage.title}}">
       </div>
-     
-      
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -14,13 +12,31 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
 
   <div class="row ">
       <div *ngFor="let feature of features " class="col-4 text-center">
           <img src="{{feature.path}}" alt="{{feature.title}}">
           <h3>{{feature.title}}</h3>
           <p>{{feature.desc}}</p>
+      </div>
+
+  </div>
+
+  <div class="row">
+      <h3></h3>
+      <p></p>
+      <div class="col-4">
+          <p></p>
+          <div class="d-inline">
+              <img src="" alt="">
+              <div>
+                  <p><strong></strong></p>
+                  <p></p>
+              </div>
+              <img src="" alt="">
+          </div>
+
       </div>
 
   </div>

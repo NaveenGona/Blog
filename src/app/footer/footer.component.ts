@@ -31,7 +31,15 @@ export class FooterComponent implements OnInit {
       blogPath:"#",
       blogTitle:"VERY VERY LONG BLOG POST NAME"
     },
-  ]
+  ];
+  contact=" CONTACT";
+  address = [{
+    company:"UNIVERSAL LTD.",
+    plotno:"13/25 NEW AVENUE",
+    streetname:"NEWTON UPON RIVER",
+    postalCode:"45Y 73J",
+    country:"ENGLAND"
+  }];
 
 
 

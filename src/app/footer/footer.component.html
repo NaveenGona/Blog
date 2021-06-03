@@ -22,7 +22,21 @@
           </div>
     </div>
     <div class="col-3">
-        <p></p>
+        <p *ngFor="let addres of address">
+            <strong>{{contact}}</strong>
+            <br>
+            {{addres.company}}
+            <br>
+            {{addres.plotno}}
+            <br>
+            {{addres.streetname}}
+            <br>
+            {{addres.postalCode}}
+            <br>
+            {{addres.country}}
+        </p>
 
+    </div>
+    <div class="col-3">
     </div>
 </div>

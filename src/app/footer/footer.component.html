@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-3">
+        <h5>{{aboutTitle}}</h5>
+        <p>{{aboutDesc}}</p>
+        <hr>
+        <p class="fw-bold">{{searchHeader}}</p>
+        <input type="search">
+   </div>
+    <div class="col-3">
+        <div class=" mb-3" >
+            <p class="fw-bold">{{blogHead}}</p>
+            <div *ngFor="let blogPost of blogPosts" class="row g-0">
+              <div  class="col-2">
+                <img src="{{blogPost.path}}" alt="{{blogPost.seal}}" class="img-fluid">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                    <a href="{{blogPost.blogPath}}" class="text-decoration-none"><p class="card-text fw-bold text-dark ">{{blogPost.blogTitle}}</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-3">
+        <p></p>
+
+    </div>
+</div>

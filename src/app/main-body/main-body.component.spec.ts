@@ -22,4 +22,10 @@ describe('MainBodyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(MainBodyComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.background-pentagon h2').textContent).toContain('Testimonials');
+  });
 });

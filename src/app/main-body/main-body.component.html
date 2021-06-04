@@ -62,29 +62,55 @@
     </div>
   </section>
 
-  <div class="row ">
+  <!-- <div class="row ">
       <div *ngFor="let feature of features " class="col-4 text-center">
           <img src="{{feature.path}}" alt="{{feature.title}}">
           <h3>{{feature.title}}</h3>
           <p>{{feature.desc}}</p>
       </div>
 
-  </div>
+  </div> -->
 
-  <div class="row">
-      <h3></h3>
-      <p></p>
-      <div class="col-4">
-          <p></p>
-          <div class="d-inline">
-              <img src="" alt="">
-              <div>
-                  <p><strong></strong></p>
-                  <p></p>
-              </div>
-              <img src="" alt="">
+  <section class="bar background-white">
+    <div class="container text-center">
+      <div class="row">
+        <div *ngFor="let feature of features" class="col-lg-4 col-md-6">
+          <div class="box-simple">
+            <div class="icon-outlined"><i class="fa fa-{{feature.icon}}"></i></div>
+            <h3 class="h4">{{feature.title}}</h3>
+            <p>{{feature.desc}}</p>
           </div>
-
       </div>
-
+    </div>
   </div>
+  </section>
+  <section class="bar background-pentagon no-mb text-md-center">
+    <div *ngFor="let testmonial of testmonials" class="container">
+      <div class="heading text-center">
+        <h2>{{testmonial.title}}</h2>
+      </div>
+      <p class="lead">{{testmonial.desc}}</p>
+      <!-- Carousel Start-->
+      <ul *ngIf="testmonial.children?.length" class="owl-carousel testimonials list-unstyled equal-height">
+        <li *ngFor="let child of testmonial.children" class="item">
+          <div class="testimonial d-flex flex-wrap">
+            <div class="text">
+              <p>{{child.desc}}</p>
+            </div>
+            <div class="bottom d-flex align-items-center justify-content-between align-self-end">
+              <div class="icon"><i class="fa fa-quote-{{child.icon}}"></i></div>
+              <div class="testimonial-info d-flex">
+                <div class="title">
+                  <h5>{{child.name}}</h5>
+                  <p>{{child.disig}}</p>
+                </div>
+                <div class="avatar"><img alt="{{child.seal}}" src="{{child.path}}" class="img-fluid"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+      <!-- Carousel End-->
+    </div>
+  </section>

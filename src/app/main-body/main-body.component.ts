@@ -36,41 +36,96 @@ export class MainBodyComponent implements OnInit {
 
   features = [
     {
-      path:"assets/img/icon.png",
-      seal:"Image of Seal",
+      icon:"desktop",
+
       title:"WEBDESIGN",
       desc:"Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring."
     },
     {
-      path:"assets/img/icon.png",
-      seal:"Image of Seal",
+      icon:"print",
+
       title:"PRINT",
       desc:"Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice. Six draw you him full not mean evil. Prepare garrets it expense windows shewing do an."
     },
     {
-      path:"assets/img/icon.png",
-      seal:"Image of Seal",
+      icon:"globe",
+
       title:"SEO AND SEM",
       desc:"Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people so basket ladies window expect."
     },
     {
-      path:"assets/img/icon.png",
-      seal:"Image of Seal",
+      icon:"lightbulb-o",
+
       title:"CONSULTING",
       desc:"Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring."
     },
     {
-      path:"assets/img/icon.png",
-      seal:"Image of Seal",
+      icon:"envelope-o",
+
       title:"EMAIL MARKETING",
       desc:"Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice. Six draw you him full not mean evil. Prepare garrets it expense windows shewing do an."
     },
     {
-      path:"assets/img/icon.png",
-      seal:"Image of Seal",
+      icon:"user",
+
       title:"UX",
       desc:"Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people so basket ladies window expect."
     },
+  ];
+
+  testmonials=[
+    {
+      title: "Testimonials",
+      desc:"We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.",
+      children: [
+    {
+    
+      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
+    {
+      desc:"The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. What's happened to me?  he thought. It wasn't a dream.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
+    {
+      desc:"His room, a proper human room although a little too small, lay peacefully between its four familiar walls.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
+    {
+      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
+    {
+      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
+  ]
+  }
   ]
   constructor() { }
 

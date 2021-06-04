@@ -146,51 +146,50 @@ export class MainBodyComponent implements OnInit {
       text:"Check our blog",
       children: [
     {
-      imgurl:"assets/img/person-1.jpg",
+      imgurl:"assets/img/portfolio-3.jpg",
       seal:"Image",
       path:"#",
       title:"Fashion Now",
-      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
-      icon:"left",
-      name:"John McIntyre",
-      disig:"CEO, TransTech",
+      name:"John Snow",
+      icon:"chain",
+      readmore:"Read More",
+      desc:"Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.",
+      continue:"Continue reading",
     },
     {
-      desc:"The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. What's happened to me?  he thought. It wasn't a dream.",
-      icon:"left",
-      name:"John McIntyre",
-      disig:"CEO, TransTech",
-      path:"assets/img/person-1.jpg",
-      seal:"Image"
-
+      imgurl:"assets/img/portfolio-4.jpg",
+      seal:"Image",
+      path:"#",
+      title:"5 ways to look awesome",
+      name:"John Snow",
+      icon:"chain",
+      readmore:"Read More",
+      desc:"Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.",
+      continue:"Continue reading",
     },
     {
-      desc:"His room, a proper human room although a little too small, lay peacefully between its four familiar walls.",
-      icon:"left",
-      name:"John McIntyre",
-      disig:"CEO, TransTech",
-      path:"assets/img/person-1.jpg",
-      seal:"Image"
-
+      imgurl:"assets/img/portfolio-5.jpg",
+      seal:"Image",
+      path:"#",
+      title:"WHAT TO DO",
+      name:"John Snow",
+      icon:"chain",
+      readmore:"Read More",
+      desc:"Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.",
+      continue:"Continue reading",
     },
     {
-      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
-      icon:"left",
-      name:"John McIntyre",
-      disig:"CEO, TransTech",
-      path:"assets/img/person-1.jpg",
-      seal:"Image"
-
+      imgurl:"assets/img/portfolio-6.jpg",
+      seal:"Image",
+      path:"#",
+      title:"Fashion Now",
+      name:"John Snow",
+      icon:"chain",
+      readmore:"Read More",
+      desc:"Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.",
+      continue:"Continue reading",
     },
-    {
-      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
-      icon:"left",
-      name:"John McIntyre",
-      disig:"CEO, TransTech",
-      path:"assets/img/person-1.jpg",
-      seal:"Image"
-
-    },
+    
   ]
   }
   ];

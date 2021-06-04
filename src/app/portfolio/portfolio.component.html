@@ -1,0 +1,85 @@
+<div id="heading-breadcrumbs">
+    <div class="container">
+      <div *ngFor="let himage of headerimage " class="row d-flex align-items-center flex-wrap">
+        <div class="col-md-7">
+          <h1 class="h2">{{himage.title}}</h1>
+        </div>
+        <div class="col-md-5">
+          <ul *ngIf="himage.children?.length" class="breadcrumb d-flex justify-content-end">
+            <li *ngFor="let child of himage.children" class="breadcrumb-item"><a href="{{child.path}}">{{child.title}}</a></li>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div class="container">
+      <section class="bar">
+        <div class="row">
+          <div *ngFor="let portf of portfolio" class="col-md-12">
+            <div class="heading">
+              <h2>{{portf.title}}</h2>
+            </div>
+            <p class="lead">{{portf.desc}}</p>
+          </div>
+        </div>
+        <div class="row portfolio text-center">
+          <div *ngFor="let pimages of portfolioimages" class="col-md-6">
+            <div class="box-image">
+              <div class="image"><img src="{{pimages.imgpath}}" alt="{{pimages.seal}}" class="img-fluid">
+                <div class="overlay d-flex align-items-center justify-content-center">
+                  <div class="content">
+                    <div class="name">
+                      <h3><a href="{{pimages.path}}" class="color-white">{{pimages.title}}</a></h3>
+                    </div>
+                    <div class="text">
+                      <p class="d-none d-sm-block">{{pimages.desc}}</p>
+                      <p class="buttons" [innerHtml]= "pimages.descpath"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="bar background-pentagon no-mb">
+        <div class="container">
+          <div class="row showcase text-center">
+            <div *ngFor="let client of clients" class="col-md-3 col-sm-6">
+              <div class="item">
+                <div class="icon-outlined icon-sm icon-thin"><i class="fa fa-{{client.icon}}"></i></div>
+                <h4><span class="h1 counter">{{client.count}}</span><br> {{client.sites}}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bar bg-gray">
+        <div *ngFor="let client of ourclients" class="container">
+          <div class="heading text-center">
+            <h2>{{client.title}}</h2>
+          </div>
+          <ul *ngIf="client.children?.length" class="list-unstyled owl-carousel customers no-mb">
+            <li *ngFor="let subclient of client.children" class="item"><img src="{{subclient.path}}" alt="{{subclient.seal}}" class="img-fluid"></li>
+         
+          </ul>
+        </div>
+      </section>
+    
+      <div class="get-it">
+        <div class="container">
+          <div *ngFor="let suc of success" class="row">
+            <div class="col-lg-8 text-center p-3">
+              <h3>{{suc.title}}</h3>
+            </div>
+            <div class="col-lg-4 text-center p-3">   <a href="{{suc.path}" class="btn btn-template-outlined-white">{{suc.text}}</a></div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+<app-footer></app-footer>

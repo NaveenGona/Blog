@@ -8,6 +8,7 @@ import { MainBodyComponent } from './main-body/main-body.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }
@@ -18,7 +19,8 @@ const routes: Routes = [
     HeaderComponent,
     MainBodyComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

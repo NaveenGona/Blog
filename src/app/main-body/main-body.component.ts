@@ -126,7 +126,114 @@ export class MainBodyComponent implements OnInit {
     },
   ]
   }
+  ];
+  moreinfo=[
+    {
+      imgurl:"assets/img/fixed-background-2.jpg",
+      icon:"code-o",
+      title:"Do you want to see more?",
+      desc:"We have prepared for you more than 40 different HTML pages, including 5 variations of homepage.",
+      path:"#",
+      text:"See another homepage"
+    }
+  ];
+
+  aboutmore=[
+    {
+      title: "From the blog",
+      desc:"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+      path:"#",
+      text:"Check our blog",
+      children: [
+    {
+      imgurl:"assets/img/person-1.jpg",
+      seal:"Image",
+      path:"#",
+      title:"Fashion Now",
+      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+    },
+    {
+      desc:"The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. What's happened to me?  he thought. It wasn't a dream.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
+    {
+      desc:"His room, a proper human room although a little too small, lay peacefully between its four familiar walls.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
+    {
+      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
+    {
+      desc:"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+      icon:"left",
+      name:"John McIntyre",
+      disig:"CEO, TransTech",
+      path:"assets/img/person-1.jpg",
+      seal:"Image"
+
+    },
   ]
+  }
+  ];
+  ourclients = [
+    {
+      title:"Our Clients",
+      children:[
+        {
+          path:"assets/img/customer-1.png",
+          seal:"image"
+        },
+        {
+          path:"assets/img/customer-2.png",
+          seal:"image"
+        },
+        {
+          path:"assets/img/customer-3.png",
+          seal:"image"
+        },
+        {
+          path:"assets/img/customer-4.png",
+          seal:"image"
+        },
+        {
+          path:"assets/img/customer-5.png",
+          seal:"image"
+        },
+        {
+          path:"assets/img/customer-6.png",
+          seal:"image"
+        },
+      ]
+      
+    }
+    
+  ];
+  sites=[
+    {
+      title:"Do you want cool website like this one?",
+      path:"#",
+      text:"Buy this template now"
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {

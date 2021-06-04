@@ -1,42 +1,57 @@
-<div class="row">
-    <div class="col-3">
-        <h5>{{aboutTitle}}</h5>
-        <p>{{aboutDesc}}</p>
+<footer class="main-footer">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let footer of quickinfo" class="col-lg-3">
+        <h4 class="h6">{{footer.blogTitle}}</h4>
+        <p>{{footer.desc}}</p>
         <hr>
-        <p class="fw-bold">{{searchHeader}}</p>
-        <input type="search">
-   </div>
-    <div class="col-3">
-        <div class=" mb-3" >
-            <p class="fw-bold">{{blogHead}}</p>
-            <div *ngFor="let blogPost of blogPosts" class="row g-0">
-              <div  class="col-2">
-                <img src="{{blogPost.path}}" alt="{{blogPost.seal}}" class="img-fluid">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                    <a href="{{blogPost.blogPath}}" class="text-decoration-none"><p class="card-text fw-bold text-dark ">{{blogPost.blogTitle}}</p></a>
-                </div>
-              </div>
+        <h4 class="h6">{{footer.subtitle}}</h4>
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i></button>
             </div>
           </div>
+        </form>
+        <hr class="d-block d-lg-none">
+      </div>
+      <div *ngFor="let blog of blogs" class="col-lg-3">
+        <h4  class="h6">{{blog.blogTitle}}</h4>
+        <ul *ngIf="blog.children?.length" class="list-unstyled footer-blog-list">
+          <li *ngFor="let child of blog.children" class="d-flex align-items-center">
+            <div class="image"><img src="{{child.path}}" alt="{{child.seal}}" class="img-fluid"></div>
+            <div *ngIf="child.children?.length" class="text">
+              <h5 *ngFor="let subchild of child.children" class="mb-0"> <a href="{{subchild.path}}">{{subchild.title}}</a></h5>
+            </div>
+          </li>
+        </ul>
+        <hr class="d-block d-lg-none">
+      </div>
+      <div *ngFor="let contact of contactinfo" class="col-lg-3">
+        <h4 class="h6">{{contact.title}}</h4>
+        <p class="text-uppercase"><strong>{{contact.company}}</strong><br>{{contact.plotno}} <br>{{contact.streetname}} <br>{{contact.postalCode}} <br>{{contact.country}} <br><strong>Great Britain</strong></p><a href="{{contact.path}}" class="btn btn-template-main">{{contact.desc}}</a>
+        <hr class="d-block d-lg-none">
+      </div>
+      <div class="col-lg-3">
+        <ul class="list-inline photo-stream">
+          <li *ngFor="let fgal of gallery" class="list-inline-item"><a href="{{fgal.path}}"><img src="{{fgal.imgsrc}}" alt="{{fgal.seal}}" class="img-fluid"></a></li>
+          
+        </ul>
+      </div>
     </div>
-    <div class="col-3">
-        <p *ngFor="let addres of address">
-            <strong>{{contact}}</strong>
-            <br>
-            {{addres.company}}
-            <br>
-            {{addres.plotno}}
-            <br>
-            {{addres.streetname}}
-            <br>
-            {{addres.postalCode}}
-            <br>
-            {{addres.country}}
-        </p>
-
+  </div>
+  <div class="copyrights">
+    <div *ngFor="let rights of copyrights" class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center-md">
+          <p>&copy; {{rights.desc}} </p>
+        </div>
+        <div class="col-lg-8 text-right text-center-md">
+          <p> {{rights.text}} <a href="{{rights.path}}">Bootstrapious </a>&  <a href="{{rights.imgpath}}">Fity</a></p>
+          <!-- Please do not remove the backlink to us unless you purchase the Attribution-free License at https://bootstrapious.com/donate. Thank you. -->
+        </div>
+      </div>
     </div>
-    <div class="col-3">
-    </div>
-</div>
+  </div>
+</footer>
